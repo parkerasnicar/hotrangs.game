@@ -1,0 +1,89 @@
+/* ---------------------------------- */
+/*            HEADER BASE             */
+/* ---------------------------------- */
+
+.site-header {
+    position: relative;
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-6);
+    background: var(--color-bg);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* ---------------------------------- */
+/*      BACKGROUND RED STAR           */
+/* ---------------------------------- */
+
+.star-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(300px, 60vw, 900px);
+    height: auto;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+    filter: drop-shadow(0px 0px 0px var(--color-bg));
+
+    /* Tint the star to primary red */
+    object-fit: contain;
+    mix-blend-mode: normal;
+}
+
+/* ---------------------------------- */
+/*           BRAND MASTHEAD           */
+/* ---------------------------------- */
+
+.brand-masthead {
+    position: relative;
+    z-index: 10; /* Above the big star */
+    display: inline-block;
+}
+
+/* ---------------------------------- */
+/*  LINE ONE: B F [WHITE STAR] L      */
+/* ---------------------------------- */
+
+.brand-line1 {
+    font-family: var(--font-altdisplay);
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: 0.9;
+    margin: 0;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+/* Text letters */
+.brand-line1 span {
+    color: var(--color-text);
+}
+
+/* Inline white star replacing "*" */
+.star-inline {
+    width: clamp(45px, 10vw, 90px);
+    height: auto;
+    filter: brightness(1000%); /* Make imported star pure white */
+    z-index: 11;
+}
+
+/* ---------------------------------- */
+/*  LINE TWO: Boomerang Fu STAR League */
+/* ---------------------------------- */
+
+.brand-line2 {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 2.8vw, 2rem);
+    margin-top: var(--space-1);
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.brand-line2 .alttext {
+    color: var(--color-alttext);
+}
