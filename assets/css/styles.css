@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* Global box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* --- --- --- --- --- --- --- */
+
+/* --- --- Font Families --- --- */
+
+    /* Rubik Mono One */
+    @font-face {
+        font-family: "Rubik Mono One";
+        src: url("../fonts/Rubik-MonoOne.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Akira Expanded */
+    @font-face {
+        font-family: "Akira Expanded";
+        src: url("../fonts/Akira Expanded.otf") format("opentype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    /* Rubik */
+    @font-face {
+        font-family: "Rubik";
+        src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url("../fonts/Rubik-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url("../fonts/Rubik-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Rubik";
+        src: url("../fonts/Rubik-BoldItalic.ttf") format("truetype");
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    /* Noto Sans Tc (Chinese) */
+    @font-face {
+        font-family: "Noto Sans TC";
+        src: url("../fonts/NotoSansTC-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans TC";
+        src: url("../fonts/NotoSansTC-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans TC";
+        src: url("../fonts/NotoSansTC-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Noto Sans TC";
+        src: url("../fonts/NotoSansTC-Black.ttf") format("truetype");
+        font-weight: 900;
+        font-display: swap;
+    }
+
+/* --- --- Variables --- --- */
+
+    :root {
+        /* COLORS */
+        --color-bg: #ffffff;
+        --color-text: #222222;
+        --color-alttext: #f0f0f0;
+        --color-primary: #cd2828;
+        --color-secondary: #1a1a1a;
+        --color-muted: #a0a0a0;
+
+        /* TYPOGRAPHY */
+        --font-display: "Rubik Mono One", sans-serif;
+
+        --font-base: "Rubik", sans-serif;
+        --font-size-base: 16px;
+        --line-height-base: 1.6;
+
+        --font-cjk: "Noto Sans TC", sans-serif;
+
+        /* SPACING SCALE */
+        --space-1: 0.25rem;
+        --space-2: 0.5rem;
+        --space-3: 1rem;
+        --space-4: 1.5rem;
+        --space-5: 2rem;
+        --space-6: 3rem;
+
+        /* CONTAINERS */
+        --container-width: 1200px;
+    }
